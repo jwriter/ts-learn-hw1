@@ -1,0 +1,15 @@
+<div class="fullsize"> 
+
+    <img [src]="choosed.img">
+    <div class="filters">
+    ... some filters ...
+    </div>
+    <div class="listsize">
+        <mat-list role="list">
+            <mat-list-item *ngFor="let item of dataSet">
+                <app-one-item [data]=item (click)="onClick(item)"></app-one-item>
+              </mat-list-item>
+        </mat-list>
+    </div>
+
+</div>

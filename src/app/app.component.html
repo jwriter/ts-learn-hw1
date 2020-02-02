@@ -1,0 +1,15 @@
+
+<h1>Homework 1</h1>
+
+<div class="leftside">
+  <app-main-list (onChanged)="onChanged($event)"></app-main-list>
+</div>
+
+<div class="rightside">
+  <app-weather-info [dataWithWeather]="choosedItem"></app-weather-info>
+  <app-social-info [dataWithSocial]="choosedItem"></app-social-info>
+</div>
+    
+  
+
+

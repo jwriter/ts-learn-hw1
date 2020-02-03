@@ -1,17 +1,3 @@
 h1 {
     margin: 50px; text-align: center;
 }
-
-.leftside {
-    float:left; padding: 30px;
-}
-
-.rightside {
-    padding: 30px;
-}
-
-.bordez {
-    color: black;
-    border: solid;
-    margin: auto;
-}

@@ -1,13 +1,27 @@
 
 <h1>Homework 1</h1>
 
-<div class="leftside">
-  <app-main-list (onChanged)="onChanged($event)"></app-main-list>
-</div>
+<div style="width:600px; margin: auto; display:flex">
 
-<div class="rightside">
-  <app-weather-info [dataWithWeather]="choosedItem"></app-weather-info>
-  <app-social-info [dataWithSocial]="choosedItem"></app-social-info>
+	<div>
+		<app-main-list (onChanged)="onChanged($event)"></app-main-list>
+
+
+	</div>
+	
+	<div style="padding-left: 10px;">
+		<div>
+			<app-weather-info [dataWithWeather]="choosedItem"></app-weather-info>
+
+
+		</div>
+		
+		<div>
+			<app-social-info [dataWithSocial]="choosedItem"></app-social-info>
+
+
+		</div>
+	</div>
 </div>
     
   

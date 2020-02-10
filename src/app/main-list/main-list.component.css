@@ -1,16 +1,11 @@
-/*
-.fullsize {
-     width:250px;
-    height:300px 
-}
-*/
 .filters {
     padding-top: 5px;
     padding-bottom: 5px;
+    margin: auto;
 }
+
 .listsize {
     width:250px;
-    /*height:200px*/
 }
 
 img {
@@ -18,7 +13,7 @@ img {
     height: 150px;
 }
 
-mat-list {     
+mat-list {
     overflow-y: auto;
     overflow-x: hidden;
     height: 400px;

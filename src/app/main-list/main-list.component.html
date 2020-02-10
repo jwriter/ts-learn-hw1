@@ -1,12 +1,22 @@
-<div class="fullsize"> 
+<div class="fullsize">
 
     <img [src]="choosed.img">
     <div class="filters">
-    ... some filters ...
+      <mat-button-toggle-group #group="matButtonToggleGroup">
+        <mat-button-toggle value="Sea" aria-label="Text align left">
+          Sea
+        </mat-button-toggle>
+        <mat-button-toggle value="Mountain" aria-label="Text align center">
+          Mountains
+        </mat-button-toggle>
+        <mat-button-toggle value="" aria-label="Text align right">
+          All
+        </mat-button-toggle>
+      </mat-button-toggle-group>
     </div>
     <div class="listsize">
         <mat-list role="list">
-            <mat-list-item *ngFor="let item of dataSet">
+            <mat-list-item *ngFor="let item of  dataSet | filterType:group.value ">
                 <app-one-item [data]=item (click)="onClick(item)"></app-one-item>
               </mat-list-item>
         </mat-list>

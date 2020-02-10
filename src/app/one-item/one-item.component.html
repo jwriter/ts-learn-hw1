@@ -1,6 +1,9 @@
 <div>
-    <h3>{{data.address}}</h3>
-    <span>Phone: {{data.phone}}</span>  
-    <img [src]="data.img">
-    <img [src]="data.social_info.img">
+  <div> {{data.address}} </div>
+  <div> <span>{{data.phone | phone}}</span> </div>
+  <div> <img [src]="data.img">
+    <img [src]="data.social_info.img"></div>
+
+
+
 </div>

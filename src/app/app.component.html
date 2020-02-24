@@ -1,29 +1,25 @@
 
-<h1>Homework 1</h1>
+<h1>Homework 2 - two services</h1>
 
 <div style="width:600px; margin: auto; display:flex">
 
 	<div>
-		<app-main-list (onChanged)="onChanged($event)"></app-main-list>
+		<app-main-list></app-main-list>
 
 
 	</div>
-	
+
 	<div style="padding-left: 10px;">
 		<div>
-			<app-weather-info [dataWithWeather]="choosedItem"></app-weather-info>
-
-
+			<app-weather-info></app-weather-info>
 		</div>
-		
+
 		<div>
-			<app-social-info [dataWithSocial]="choosedItem"></app-social-info>
-
-
+			<app-social-info></app-social-info>
 		</div>
 	</div>
 </div>
-    
-  
+
+
 
 
